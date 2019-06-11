@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EventGhost Version="1710" Guid="{AA732D0B-90CA-48F7-AFD2-9B7678291340}" Time="1544191802.01">
+    <Autostart Name="Autostart" Expanded="True">
+        <Plugin Identifier="HID" Guid="{05A690D9-27C2-4AC5-B0DD-2F562619E922}" File="HID">
+            gAIoWAAAAABxAImIiVVSXFw/XGhpZCN2aWRfMDVhYyZwaWRfODI0MiM4JjE3NGQ5MzFjJjAmMDAwMCN7NGQxZTU1YjItZjE2Zi0xMWNmLTg4Y2ItMDAxMTExMDAwMDMwfXEBTawFWAsAAABBcHBsZSwgSW5jLnECTUKCWAsAAABJUiBSZWNlaXZlcnEDTQABiUsAdHEELg==
+        </Plugin>
+        <Plugin Identifier="Task" Guid="{D1748551-C605-4423-B392-FB77E6842437}" File="Task">
+            gAIpLg==
+        </Plugin>
+    </Autostart>
+    <Folder Name="ARE" Expanded="True">
+        <Macro Name="Emulate Keystrokes: {Up}" Expanded="True">
+            <Event Name="HID.2587EE620A" />
+            <Action>
+                Window.SendKeys(u'{Up}', False, 2)
+            </Action>
+            <Action>
+                EventGhost.Wait(0.10000000000000001)
+            </Action>
+            <Action>
+                EventGhost.FlushEvents()
+            </Action>
+        </Macro>
+        <Macro Name="Emulate Keystrokes: {Down}" Expanded="True">
+            <Event Name="HID.2587EE620C" />
+            <Action>
+                Window.SendKeys(u'{Down}', False, 2)
+            </Action>
+            <Action>
+                EventGhost.Wait(0.10000000000000001)
+            </Action>
+            <Action>
+                EventGhost.FlushEvents()
+            </Action>
+        </Macro>
+        <Macro Name="Emulate Keystrokes: {Left}" Expanded="True">
+            <Event Name="HID.2687EE6209" />
+            <Action>
+                Window.SendKeys(u'{Left}', False, 2)
+            </Action>
+            <Action>
+                EventGhost.Wait(0.10000000000000001)
+            </Action>
+            <Action>
+                EventGhost.FlushEvents()
+            </Action>
+        </Macro>
+        <Macro Name="Emulate Keystrokes: {Right}" Expanded="True">
+            <Event Name="HID.2587EE6206" />
+            <Action>
+                Window.SendKeys(u'{Right}', False, 2)
+            </Action>
+            <Action>
+                EventGhost.Wait(0.10000000000000001)
+            </Action>
+            <Action>
+                EventGhost.FlushEvents()
+            </Action>
+        </Macro>
+        <Macro Name="Emulate Keystrokes: {Select}" Expanded="True">
+            <Event Name="HID.2587EE625C" />
+            <Action>
+                Window.SendKeys(u'{Enter}', False, 2)
+            </Action>
+            <Action>
+                EventGhost.Wait(0.10000000000000001)
+            </Action>
+            <Action>
+                EventGhost.FlushEvents()
+            </Action>
+        </Macro>
+        <Macro Name="Emulate Keystrokes: {Backspace}" Expanded="True">
+            <Event Name="HID.2587EE6203" />
+            <Action>
+                Window.SendKeys(u'{Backspace}', False, 2)
+            </Action>
+            <Action>
+                EventGhost.Wait(0.10000000000000001)
+            </Action>
+            <Action>
+                EventGhost.FlushEvents()
+            </Action>
+        </Macro>
+        <Macro Name="Emulate Keystrokes: {Left}" Expanded="True">
+            <Event Name="HID.2587EE625F" />
+            <Action>
+                Window.SendKeys(u'{MediaPlayPause}', False, 2)
+            </Action>
+            <Action>
+                EventGhost.Wait(0.10000000000000001)
+            </Action>
+            <Action>
+                EventGhost.FlushEvents()
+            </Action>
+        </Macro>
+        <Macro Name="Select (hold)" Expanded="True">
+            <Event Name="HID.2687EE6205" />
+            <Action>
+                Window.SendKeys(u'{Alt+F4}', False, 2)
+            </Action>
+            <Action>
+                System.Command(u'taskkill /im kodi.exe /t', True, False, u'', True, False, False, False, True)
+            </Action>
+            <Action>
+                EventGhost.Wait(2.1000000000000001)
+            </Action>
+            <Action>
+                System.Command(u'taskkill /im kodi.exe /t', True, False, u'', True, False, False, False, False)
+            </Action>
+            <Action>
+                EventGhost.Wait(20.100000000000001)
+            </Action>
+            <Action>
+                System.Command(u'taskkill /im kodi.exe /t', True, False, u'', True, False, False, False, True)
+            </Action>
+            <Action>
+                System.Execute(u'C:\\Program Files (x86)\\Kodi\\kodi.exe', u'', 0, False, 2, u'', False, False, u'', False, False, False, False)
+            </Action>
+            <Action>
+                EventGhost.FlushEvents()
+            </Action>
+        </Macro>
+    </Folder>
+</EventGhost>

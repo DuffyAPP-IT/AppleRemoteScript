@@ -1,0 +1,6 @@
+This script will allow your Windows PC to communicate with the Apple Remote V2 (A1294) Which is currently unsupported by Windows.
+You will first need to install the EventGhost software.
+
+Following this, import the AppleIR code that I have created into EventGhost and the remote should start functioning.
+
+The script is optimised for Kodi but I have left the mappings in an easy to find area so that you can change it to your liking!
